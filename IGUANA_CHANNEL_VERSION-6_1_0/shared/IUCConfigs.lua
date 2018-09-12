@@ -9,7 +9,7 @@ iucConf.dev = {
 	
    -- Configurations for patient DB file
    ['patientDbPath'] = '/root/orig/',
-   ['patientDbFile'] = 'myDB.sqlite'
+   ['patientDbFile'] = 'PatientData.sqlite'
 }
 
 
