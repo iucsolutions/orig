@@ -1,0 +1,22 @@
+<channel
+   name="Channel2Orig"
+   guid="1942A87B0EA1FF015FF720E9BB9DB747"
+   description=""
+   start_automatically="false"
+   logging_level="1"
+   use_message_filter="false">
+   <to_mapper
+      guid="Channel2Orig-To-CbvqoRW2sa2xOl"
+      commit_id="74af6dcddfabf6edd3b22edd75182aa2dd7c1423"
+      commit_comment="okay">
+      <dequeue_list>
+         <dequeue
+            source_name="IUC: Channel1"
+            dequeue_guid="C67AA1494842BA7A69885EA23E870FEC"/>
+         <dequeue
+            source_name="Channel1Orig"
+            dequeue_guid="127DEEFD224BDB84BE901017FDE88807"/>
+      </dequeue_list>
+   </to_mapper>
+   <from_channel/>
+</channel>

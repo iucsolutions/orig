@@ -1,4 +1,4 @@
-local serverType = os.getenv('serverTypeOrig')
+local serverType = os.getenv('serverTypeOrig2')
 
 local iucConf = {}
 

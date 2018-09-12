@@ -1,0 +1,48 @@
+<channel
+   name="Channel3Orig"
+   guid="D59FC292F621A7C39D31B3091150C209"
+   description=""
+   start_automatically="false"
+   logging_level="2"
+   use_message_filter="true">
+   <to_file
+      output_dir="${destDirOrig2}/"
+      write_to_separate_file="true"
+      output_single_filename=""
+      use_prepended_info_as_filename="false"
+      output_file_id_type="1"
+      output_filename_mask="%i.txt"
+      temp_file_extension="tmp"
+      count_of_padding_digit="5"
+      ftp_server="10.211.55.151"
+      ftp_username="orig2"
+      ftp_password="UATjisbm4/FLuco/saZdTA=="
+      ftp_path="${ftpPathOrig2}"
+      ftp_max_reconnect="5"
+      sftp_authentication_method="user_password"
+      use_ftp="true">
+      <dequeue_list>
+         <dequeue
+            source_name="IUC: Channel1"
+            dequeue_guid="CE363B16446106C0CF18D5CF15FCC4D1"/>
+         <dequeue
+            source_name="Channel1Orig"
+            dequeue_guid="3B3831D2176DEF7F066CCD8DBD0E75B5"/>
+      </dequeue_list>
+   </to_file>
+   <from_channel/>
+   <message_filter
+      filter_after_logging="true"
+      log_pre_post_filter_message="true"
+      keep_vmd_updated="false"
+      original_vmd_path=""
+      filter_vmd_path=""
+      transformation_mode="0"
+      scripted_transformation_configuration_name="default"
+      error_handling="0"
+      use_translator_filter="true"
+      translator_guid="Channel3Orig-Filter-oRt7WZZWaBf2c3"
+      translator_commit_id="88ea7a05a85c48e850f56ebccadf1707591515b0"
+      translator_commit_comment="Import Translators: okay">
+   </message_filter>
+</channel>
